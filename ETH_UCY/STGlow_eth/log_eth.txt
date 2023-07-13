@@ -1,0 +1,9 @@
+Testing prediction ADE:0.307
+Testing prediction FDE:0.484
+Testing prediction per_step_displacement_error:[0.039 0.038 0.094 0.142 0.182 0.212 0.248 0.285 0.338 0.394 0.44  0.484]
+Testing prediction ADE:0.31
+Testing prediction FDE:0.485
+Testing prediction per_step_displacement_error:[0.04  0.036 0.093 0.144 0.185 0.216 0.251 0.293 0.343 0.391 0.439 0.485]
+Testing prediction ADE:0.306
+Testing prediction FDE:0.488
+Testing prediction per_step_displacement_error:[0.039 0.038 0.094 0.139 0.179 0.21  0.248 0.289 0.331 0.386 0.442 0.488]

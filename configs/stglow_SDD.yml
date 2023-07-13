@@ -1,0 +1,42 @@
+PROJECT: 'stglow_eth'
+VISUALIZE: True
+CKPT_DIR: '../SDD/STGlow_sdd/best.pth'
+OUT_DIR: '../SDD/STGlow_sdd'
+DEVICE: 'cuda'
+METHOD: 'STGlow'
+MODEL:
+  IMG_SIZE: (256,256)
+  BEST_OF_MANY: True
+  K: 20
+  LATENT_DIST: 'gaussian' 
+  LATENT_DIM: 32
+
+  INPUT_LEN: 8
+  PRED_LEN: 12 # input and pred_len is defined in 30FPS
+  GLOBAL_INPUT_DIM: 2
+  DEC_OUTPUT_DIM: 2 
+  DROPOUT: 0.25
+  
+  WITH_FLOW: False
+  GRAPHORMER_ENCODE: True   # FIXME default True
+  ENC_CONCAT_TYPE: 'average'
+  INPUT_EMBED_SIZE: 256
+  FLOW_EMBED_SIZE: 256
+  FLOW_HIDDEN_SIZE: 256
+  ENC_HIDDEN_SIZE: 256
+  DEC_INPUT_SIZE: 256
+  DEC_HIDDEN_SIZE: 256
+  PT_DIR: ''
+DATASET:
+  NAME: 'sdd'
+  SDD_CONFIG: '../configs/SDD.json'
+  ROOT: '../SDD'
+  TRAJECTORY_PATH: '../processed'
+DATALOADER:
+  NUM_WORKERS: 0
+SOLVER:
+  MAX_EPOCH: 400
+  BATCH_SIZE: 128
+  LR: 0.0005
+  scheduler: 'cosine'
+  GAMMA: 0.999
