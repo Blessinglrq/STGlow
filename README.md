@@ -1,4 +1,4 @@
-# STGlow: A Flow-based Generative Framework with Dual Graphormer for Pedestrian Trajectory Prediction
+# [STGlow: A Flow-based Generative Framework with Dual Graphormer for Pedestrian Trajectory Prediction](https://arxiv.org/abs/2211.11220)
 Rongqin Liang, Yuanman Li, Jiantao Zhou, and Xia Li
 
 Our STGlow network architecture:
