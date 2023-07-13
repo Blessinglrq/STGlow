@@ -40,6 +40,8 @@ For SDD:
 python tools/test_for_sdd.py 
 ```
 
+Note that our project is developed based on the [code](https://github.com/umautobots/bidireaction-trajectory-prediction) of [BiTraP: Bi-directional Pedestrian Trajectory Prediction with Multi-modal Goal Estimation](https://arxiv.org/abs/2007.14558).
+
 ## Citation
 
 If you found the repo is useful, please feel free to cite our papers:
